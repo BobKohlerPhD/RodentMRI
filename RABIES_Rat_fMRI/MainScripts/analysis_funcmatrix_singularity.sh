@@ -68,4 +68,3 @@ singularity run \\\
 # Done\
 \
 echo "End time: $(date)"\
-}
