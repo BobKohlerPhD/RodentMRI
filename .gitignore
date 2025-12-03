@@ -4,5 +4,6 @@
 !/RABIES_Rat_fMRI/**
 !/HelperScripts/
 !/HelperScripts/**
+!README.md
 !.gitignore
 .DS_Store
