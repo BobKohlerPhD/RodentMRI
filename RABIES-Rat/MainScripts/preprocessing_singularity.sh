@@ -6,9 +6,8 @@
 #SBATCH --time=12:00:00
 #SBATCH --partition=day
 #SBATCH --mail-type=FAIL,END
-#SBATCH --mail-user=
-#SBATCH --output=/rabies_preproc_%j.out
-#SBATCH --error=/rabies_preproc_%j.err
+#SBATCH --output=/add/path
+#SBATCH --error=/add/path
 
 set -euo pipefail
 
@@ -71,7 +70,7 @@ BINDINGS=(
 
 BIND_CSV="$(IFS=, ; echo "${BINDINGS[*]}")"
 
-echo "[INFO] Running RABIES preprocess with ${LOCAL_THREADS} threads..."
+
 singularity run --cleanenv -B "${BIND_CSV}" "${IMAGE_SIF}" \
   -p MultiProc \
   --scale_min_memory 3 \
@@ -94,4 +93,4 @@ singularity run --cleanenv -B "${BIND_CSV}" "${IMAGE_SIF}" \
     --bold2anat_coreg masking=true,brain_extraction=true,registration=Affine \
     --HMC_option 1
 
-echo "[INFO] Done."
+
