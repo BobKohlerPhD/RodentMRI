@@ -19,8 +19,8 @@ This repository implements the **RABIES** (Rodent Automated Bold Improvement of 
 │   │   └── preprocessing.sh
 │   ├── preprocess_outputs                            # Folder for output 
 │   ├── QualityControl
-│   │   ├── Summarize_Motion.R
-│   │   └── Summary_FuncMatrix.R
+│   │   ├── Motion-Summary.R
+│   │   └── FunctionalMatrix-Summary.R
 │   └── rat_templates
 │       └── SIGMA_Rat_Anatomical_Imaging              # Download and place atlases here
 └── UtilityScripts
