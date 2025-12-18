@@ -129,10 +129,10 @@ qc_fc_matrices <- function(matrix_dir,
 
 
 qc_results <- qc_fc_matrices(
-  matrix_dir   = "/Volumes/NO NAME/jaiden_mri_females/analysis_outputs/analysis_datasink/matrix_data_file",
-  mapping_file = "/Volumes/NO NAME/jaiden_mri_females/analysis_outputs/analysis_datasink/matrix_ROI_csv/DSURQE_40micron_R_mapping.csv",
+  matrix_dir   = "path/to/directory/for/matrix_data_file",
+  mapping_file = "/path/to/DSURQE_40micron_R_mapping.csv",
   cor_thresholds = c(0.1, 0.2),
-  out_dir     = "/Volumes/NO NAME/jaiden_mri_females/QC_FunctionalMatrix"
+  out_dir     = "where/to/output/QC_FunctionalMatrix"
 )
 
 print(qc_results, n= nrow(qc_results))

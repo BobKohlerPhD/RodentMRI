@@ -55,7 +55,7 @@ ggplot(combined_data, aes(x = Harmonization,
   scale_fill_npg()+
   coord_flip(ylim = c(0.2, 0.75))+
   labs(x = "",
-       y = "Left Cingulate Cingulum Fractional Anisotropy", 
+       y = "", 
        title = "Neurocombat Harmonized Data Comparison")+
   theme_grey()+
   theme(text=element_text(family="Arial"),

@@ -56,7 +56,7 @@ summarise_fd <- function(fd_dir, threshold = 0.05) {
   list(summary = summary_df, plot_mean = p_mean, plot_above = p_above)
 }
 
-fd_result <- summarise_fd("/Volumes/NO NAME/jaiden_mri_females/preprocess_outputs/motion_datasink/FD_csv",
+fd_result <- summarise_fd("/FD_csv", ## FINISH PATH HERE TO FD_CSV file
                           threshold = 0.05)
 
 # summary table

@@ -6,7 +6,6 @@
 #SBATCH --time=12:00:00
 #SBATCH --partition=standard
 #SBATCH --mail-type=FAIL,END
-#SBATCH --mail-user=
 #SBATCH --output=logs/rabies_preproc_%j.out
 #SBATCH --error=logs/rabies_preproc_%j.err
 
