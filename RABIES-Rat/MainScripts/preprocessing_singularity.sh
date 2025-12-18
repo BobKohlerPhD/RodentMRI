@@ -21,10 +21,13 @@ if ! command -v singularity >/dev/null 2>&1 && command -v apptainer >/dev/null 2
 fi
 
 # Paths
-INPUT_DIR="input_bids"
-OUTPUT_DIR="preprocess_outputs"
-TEMPLATE_DIR="rodent_preprocessing/rat_templates"
-CONTAINER_DIR="rodent_preprocessing/containers"
+BASE_DIR="${SLURM_SUBMIT_DIR}"
+
+# Paths relative to the repo root
+INPUT_DIR="${BASE_DIR}/input_bids"
+OUTPUT_DIR="${BASE_DIR}/preprocess_outputs"
+TEMPLATE_DIR="${BASE_DIR}/rat_templates"
+CONTAINER_DIR="${BASE_DIR}/containers"
 IMAGE_SIF="${CONTAINER_DIR}/rabies_0.5.0.sif"
 DOCKER_URI="docker://gabdesgreg/rabies:0.5.0"
 
