@@ -33,7 +33,7 @@ Contains preproessing -> confound correction ->  functional matrix analysis scri
 Scripts with singularity in the name (all but confound correction available) were created for use in an HPC. Might need some adjusted to work. 
 
 ## QualityControl 
-`Motion-Summary.R` parses preprocessed data for a`utobox_FD.csv` files and counts the number of times a motion spike > 0.05 occurs. A bar plot is generated to show summary of motion. Motion value can be changed in script. 
+`Motion-Summary.R` parses preprocessed data for a`Autobox_FD.csv` files and counts the number of times a motion spike > 0.05 occurs. A bar plot is generated to show summary of motion. Motion value can be changed in script. 
 
 `FunctionalMatrix-Summary.R` reads functional connectivity matrices generated during the analysis step and generates a heatmap of the correlation values within each rodent matrix. 
 
