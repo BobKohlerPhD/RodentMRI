@@ -22,7 +22,7 @@ This repository implements the **RABIES** (Rodent Automated Bold Improvement of 
 │   │   ├── Summarize_Motion.R
 │   │   └── Summary_FuncMatrix.R
 │   └── rat_templates
-│       └── SIGMA_Rat_Anatomical_Imaging
+│       └── SIGMA_Rat_Anatomical_Imaging # Download and place atlases here
 ├── README.md
 └── UtilityScripts
     ├── bin_mask.R
