@@ -39,6 +39,6 @@ Scripts with singularity in the name (all but confound correction available) wer
 
 
 ## UtilityScripts
-The CSF atlases was not binarized and thus would result in an error when used in the pipeline. The `bin_mask.R` script will binarize a .nii mask file. 
+The CSF atlases was not binarized and thus would result in an error when used in the pipeline. The `binarize_mask.R` script will binarize a .nii mask file. 
 
 The `NeuroCombat.R` script is older code that was originally used for processed beta weights derived from human fMRI. Left in this repo as it could be useful if adjusted for certain purposes. Will likely place in a different repo at some point. 
