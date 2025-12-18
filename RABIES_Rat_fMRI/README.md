@@ -1,1 +1,0 @@
-##Implementation of RABIES Rodent MRI preprocessing pipeline via Docker. See RABIES documentation (https://rabies readthedocs.io/en/latest/) and Author/Creator's github (https://github.com/CoBrALab/RABIES) for specific details. 

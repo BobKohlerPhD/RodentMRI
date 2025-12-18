@@ -14,7 +14,7 @@ covariate_data <- df_cov %>% select(subject_id, batch, age, sex)
 imaging_matrix <- t(as.matrix(imaging_data))
 
 
-#-------neuroCombat formula and function------#
+#-------neuroCombat setup------#
 nc_model <- model.matrix(~ age + sex, 
                          data = covariate_data)
 
@@ -27,7 +27,7 @@ combat_output <- neuroCombat(
 harmonized_data <- as.data.frame(t(combat_output$dat.combat))
 harmonized_data$subject_id <- df$subject_id
 
-#---------------Merge and Plot Origina vs. Harmonized Data----------------#
+#--------------Plot Original vs. Harmonized Data----------------#
 original_data <- df %>%
   select(subject_id, img_feature1) %>%
   mutate(Harmonization = "Original")
