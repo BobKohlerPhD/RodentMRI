@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=rabies_preproc
-#SBATCH --output=logs/rabies_preproc_%j.out
-#SBATCH --error=logs/rabies_preproc_%j.err
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=24G
 #SBATCH --time=12:00:00
 #SBATCH --partition=standard
 #SBATCH --mail-type=FAIL,END
-#SBATCH --mail-user=your_email@example.com
+#SBATCH --mail-user=
+#SBATCH --output=logs/rabies_preproc_%j.out
+#SBATCH --error=logs/rabies_preproc_%j.err
 
 # Load Singularity
 module load singularity

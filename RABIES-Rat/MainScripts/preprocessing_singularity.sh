@@ -6,9 +6,9 @@
 #SBATCH --time=12:00:00
 #SBATCH --partition=day
 #SBATCH --mail-type=FAIL,END
-#SBATCH --mail-user=your_email@yale.edu
-#SBATCH --output=rodent_preprocessing/to_process/iman_fmri_males1-32_females33-64/preprocess_outputs/logs/rabies_preproc_%j.out
-#SBATCH --error=rodent_preprocessing/to_process/iman_fmri_males1-32_females33-64/preprocess_outputs/logs/rabies_preproc_%j.err
+#SBATCH --mail-user=
+#SBATCH --output=/rabies_preproc_%j.out
+#SBATCH --error=/rabies_preproc_%j.err
 
 set -euo pipefail
 
@@ -21,8 +21,8 @@ if ! command -v singularity >/dev/null 2>&1 && command -v apptainer >/dev/null 2
 fi
 
 # Paths
-INPUT_DIR="rodent_preprocessing/to_process/iman_fmri_males1-32_females33-64/input_bids"
-OUTPUT_DIR="rodent_preprocessing/to_process/iman_fmri_males1-32_females33-64/preprocess_outputs"
+INPUT_DIR="input_bids"
+OUTPUT_DIR="preprocess_outputs"
 TEMPLATE_DIR="rodent_preprocessing/rat_templates"
 CONTAINER_DIR="rodent_preprocessing/containers"
 IMAGE_SIF="${CONTAINER_DIR}/rabies_0.5.0.sif"
