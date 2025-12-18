@@ -1,4 +1,4 @@
-# RABIES MRI Processing Pipeline Implementation for Rats
+# Generating Functional Connectivity Matrices for Rats using the RABIES Pipeline
 
 This repository implements the **RABIES** (Rodent Automated Bold Improvement of EPI Sequences) MRI image processing pipeline for rats using Docker and Singularity.
 
