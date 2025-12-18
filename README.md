@@ -9,14 +9,22 @@ This repository implements the **RABIES** (Rodent Automated Bold Improvement of 
 ## Current Structure
 
 ```text
-.
-├── MainScripts
-│   ├── analysis_funcmatrix_singularity.sh
-│   ├── analysis_functionalmatrix.sh
-│   ├── confoundcorrection.sh
-│   ├── preprocessing_singularity.sh
-│   └── preprocessing.sh
-└── QualityControl
-    ├── Summarize_Motion.R
-    └── Summary_FuncMatrix.R
-
+├── RABIES-Rat
+│   ├── input_bids
+│   ├── MainScripts
+│   │   ├── analysis_funcmatrix_singularity.sh
+│   │   ├── analysis_functionalmatrix.sh
+│   │   ├── confoundcorrection.sh
+│   │   ├── preprocessing_singularity.sh
+│   │   └── preprocessing.sh
+│   ├── preprocess_outputs
+│   ├── QualityControl
+│   │   ├── Summarize_Motion.R
+│   │   └── Summary_FuncMatrix.R
+│   └── rat_templates
+│       └── SIGMA_Rat_Anatomical_Imaging
+├── README.md
+└── UtilityScripts
+    ├── bin_mask.R
+    └── NeuroCombat.R
+```
